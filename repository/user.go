@@ -14,6 +14,10 @@ type userRepository struct {
 	db *gorm.DB
 }
 
+func NewUserRepository(db *gorm.DB) *userRepository {
+	return &userRepository{db}
+}
+
 func (r *userRepository) Create(user entity.User) (entity.User, error) {
 	err := r.db.Create(&user).Error
 

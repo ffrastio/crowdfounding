@@ -13,5 +13,5 @@ type User struct {
 	Visible      string
 	Token        string
 	CreatedAt    time.Time
-	UpdateddAt   time.Time
+	UpdatedAt    time.Time
 }
